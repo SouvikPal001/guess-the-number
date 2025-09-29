@@ -1,6 +1,6 @@
 import random
 
-top_of_range = input("Type a number: ")
+top_of_range = input("Type a number to set your range of guess starting from 1: ")
 
 if top_of_range.isdigit():
     top_of_range = int(top_of_range)
@@ -33,9 +33,10 @@ while True:
         print("You got it!")
         break
     elif user_guess < random_number:
-        print("You were below the number!")
+        print("The number is greater than your guess!")
     else:
-        print("You were above the number!")
+        print("The number is lesser than your guess!")
 
 print("You got it in", guesses, "guesses!")
+
 
